@@ -1,0 +1,79 @@
+ body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+ 
+.contenedor {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+ 
+h1 {
+    font-size: 24px;
+}
+ 
+label {
+    display: block;
+    margin-top: 15px;
+}
+ 
+input {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+}
+ 
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+ 
+#resultado {
+    font-size: 18px;
+    font-weight: bold;
+}
+ 
+#rango {
+    font-size:18px ;
+    font-weight: bold;
+}
+
+/* Barra de IMC: va de IMC 15 a IMC 45 (amarillo - verde - rojo) */
+.barra {
+    display: none;
+    position: relative;
+    height: 14px;
+    margin: 25px 0 10px 0;
+    border-radius: 7px;
+    background: linear-gradient(to right,
+        #f4d03f 0%,
+        #2ecc71 18%,
+        #2ecc71 28%,
+        #f4d03f 40%,
+        #e67e22 60%,
+        #e74c3c 80%,
+        #c0392b 100%);
+}
+
+.marcador {
+    position: absolute;
+    top: -6px;
+    left: 0;
+    width: 4px;
+    height: 26px;
+    background-color: #333;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: left 0.5s ease;
+}
+
+#consejo {
+    font-size: 16px;
+    font-style: italic;
+    color: #555;
+}
